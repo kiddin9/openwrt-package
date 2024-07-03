@@ -2,8 +2,6 @@ module("luci.controller.fileassistant", package.seeall)
 
 function index()
 
-    entry({"admin", "nas"}, firstchild(), "NAS", 44).dependent = false
-
     local page
     page = entry({"admin", "nas", "fileassistant"}, template("fileassistant"), _("文件助手"), 1)
     page.i18n = "base"
